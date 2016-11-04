@@ -6,4 +6,4 @@ An integration between Intro.js and Vue.js.
 
 ## License
 
-vue-intro is licensed in accordance to the Intro.js license requirements, see [LICENSE.md(LICENSE.md) for details.
+vue-intro is licensed in accordance to the Intro.js license requirements, see [LICENSE.md](LICENSE.md) for details.
