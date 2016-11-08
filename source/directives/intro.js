@@ -7,7 +7,7 @@ const introDirective = {
         const name = this.arg;
         const viewModel = this.vm;
         const element = this.vm.$el;
-        const tours = viewModel.intro.tours;
+        const tours = viewModel.$intro;
 
         if (!tours.hasOwnProperty(name)) {
             
@@ -53,7 +53,7 @@ const introDirective = {
         const name = this.arg;
         const element = this.el;
         const viewModel = this.vm;
-        const tours = viewModel.intro.tours;
+        const tours = viewModel.$intro;
         const step = Object.assign({}, newValue, {element: element});
 
         if (!tours[name]._options.hasOwnProperty('steps')) {
@@ -68,7 +68,7 @@ const introDirective = {
 
         const name = this.arg;
         const viewModel = this.vm;
-        const tours = viewModel.intro.tours;
+        const tours = viewModel.$intro;
 
         if (tours.hasOwnProperty(name)) {
             delete tours[name];

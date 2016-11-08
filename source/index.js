@@ -11,8 +11,7 @@ const VueIntro = function(Vue, options) {
     }
 
     // Extend Vue with the global intro config.
-    Vue.prototype.intro = {
-        tours: {},
+    Vue.prototype.$intro = {
         defaults: options
     };
 
