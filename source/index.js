@@ -12,7 +12,7 @@ const VueIntro = function(Vue, options) {
 
     // Extend Vue with the global intro config.
     Vue.prototype.$intro = {
-        defaults: options
+        _defaultOptions: options
     };
 
     // Register the directives.

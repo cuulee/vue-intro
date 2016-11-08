@@ -10,7 +10,7 @@ const hintDirective = {
 
         if (!tours.hasOwnProperty(name)) {
 
-            let options = viewModel.intro.defaults;
+            let options = tours._defaultOptions;
             let tour = tours[name] = intro.introJs();
 
             // Setup the tour hooks.

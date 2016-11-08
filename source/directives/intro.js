@@ -11,7 +11,7 @@ const introDirective = {
 
         if (!tours.hasOwnProperty(name)) {
             
-            let options = viewModel.intro.defaults;
+            let options = tours._defaultOptions;
             let tour = tours[name] = intro.introJs(element);
 
             // Setup the tour hooks.
