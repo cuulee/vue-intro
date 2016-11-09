@@ -2,6 +2,7 @@ const hintDirective = require('./directives/hint');
 const introDirective = require('./directives/intro');
 
 /**
+ * @return {boolean}
  */
 const VueIntro = function(Vue, options) {
     

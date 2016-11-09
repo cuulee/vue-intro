@@ -2,7 +2,7 @@ const intro = require('intro.js');
 
 const introDirective = {
 
-    bind() {
+    bind: function() {
 
         const name = this.arg;
         const viewModel = this.vm;
@@ -11,8 +11,8 @@ const introDirective = {
 
         if (!tours.hasOwnProperty(name)) {
             
-            let options = tours._defaultOptions;
-            let tour = tours[name] = intro.introJs(element);
+            var options = tours._defaultOptions;
+            var tour = tours[name] = intro.introJs(element);
 
             // Setup the tour hooks.
             this.setupHooks(tour);
@@ -22,7 +22,7 @@ const introDirective = {
         }
     },
 
-    setupHooks(tour) {
+    setupHooks: function(tour) {
 
         const name = this.arg;
         const viewModel = this.vm;
@@ -48,7 +48,7 @@ const introDirective = {
         });
     },
 
-    update(newValue, oldValue) {
+    update: function(newValue, oldValue) {
 
         const name = this.arg;
         const element = this.el;
@@ -64,7 +64,7 @@ const introDirective = {
         tours[name].refresh();
     },
 
-    unbind() {
+    unbind: function() {
 
         const name = this.arg;
         const viewModel = this.vm;
