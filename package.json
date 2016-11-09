@@ -1,7 +1,7 @@
 {
     "name": "vue-intro",
     "description": "A integration between Intro.js and Vue.js.",
-    "version": "0.1.1-dev",
+    "version": "0.1.2-dev",
     "main": "./source/index.js",
     "dependencies": {
         "vue": "^2.0.3",
