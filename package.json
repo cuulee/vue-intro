@@ -4,7 +4,7 @@
     "version": "0.1.4-dev",
     "main": "./source/index.js",
     "dependencies": {
-        "vue": "^2.0.3",
+        "vue": "^2.0.6",
         "intro.js": "github:nblackburn/intro.js#show-hints"
     }
 }
